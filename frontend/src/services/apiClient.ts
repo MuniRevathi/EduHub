@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-// Use environment variable for production, fallback to localhost for development
-// TODO: Update this URL after deploying backend to Render
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+// Use environment variable for production, fallback to Render backend
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://eduhub-9gy6.onrender.com';
 
 // Create axios instance with default config
 const apiClient = axios.create({
